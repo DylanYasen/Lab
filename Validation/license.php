@@ -24,6 +24,8 @@
   Required.<br>
   <input type="number" name="ssn"><br><br>
 
+  <input type="submit"></input>
+
 </form>
 
 </body>
