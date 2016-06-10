@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form action="post.php" method="POST">
+
+<input name ="input" list="browsers">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+</datalist>
+
+<button onclick="">Submit</button>
+
+</form>
+
+<script type="text/javascript">
+function load(){
+		// async load class file 
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (xhttp.readyState == 4 && xhttp.status == 200) {
+			console.log(xhttp.responseText);
+			console.log ("class data file loaded");
+			console.log ("============end===============\n");
+		
+		}
+	};
+
+	xhttp.open("POST", "get.php", true);
+	xhttp.send();
+}
+
+load();
+
+</script>
+
+
+
+</body>
+</html>

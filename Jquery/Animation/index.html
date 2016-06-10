@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+
+<button id = "btn1">Animate height & width</button>
+<button id = "btn2">Reset</button>
+<div id = "box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+</body>
+
+
+<script >
+	$(function() {
+		$('#btn1').click(function(event) {
+			$("#box").animate({width: '250px'});
+			$("#box").animate({height: '250px'});	
+		});
+
+
+		$('#btn2').click(function(event) {
+			$("#box").animate({width: '100px'});
+			$("#box").animate({height: '100px'});	
+		});
+	});
+
+</script>
+
+</html>
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<input id = "num" type = "number"></input>
+<button onclick="Add()">Add</button>
+<button onclick="Display()">Display</button>
+<br><a id = "label">reuslt:</a><br>
+
+
+<script type="text/javascript">
+	
+	var data = [];
+
+	function Add(){
+		var input = document.getElementById("num").value;
+		data.push(input);
+	}
+
+	function Display(){
+		var dom = document.getElementById("label");
+
+	dom.innerHTML += "<br>";
+				
+		for (var i = 0; i < data.length; i++) {
+
+			dom.innerHTML += data[i];
+
+			dom.innerHTML += "<br>";
+		}
+
+	}
+
+
+</script>
+
+
+</body>
+</html>

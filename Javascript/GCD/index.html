@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="gdc.js"></script>
+</head>
+<body>
+
+<textarea id = "num1"></textarea><br>
+<textarea id = "num2"></textarea><br>
+
+<a id = "label">reuslt:</a><br>
+<button onclick="result()">GCD</button>
+	
+<script type="text/javascript">
+	function result(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+
+		var result = gcd(num1,num2);
+
+		console.log(result);
+	}
+
+</script>
+
+</body>
+</html>

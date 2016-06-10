@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	
+<style type="text/css">
+	.focusedin{
+		background: green;
+	}
+	.focusedout{
+		background: blue;
+	}
+</style>
+
+</head>
+<body>
+
+<div>
+First name: <input type = "text" id = "input1"></input><br>
+Last name: <input type="text" id = "input2"></input>
+</div>
+
+
+<script>
+
+$(function() {
+
+	$("#input1").mouseenter(function(event) {
+		$("this").attr('class', 'focusedin');
+	});
+
+
+	$("#input1").mouseleave(function(event) {
+		$("this").attr('class', 'focusedout');
+	});
+});
+
+</script>
+
+</body>
+</html>
